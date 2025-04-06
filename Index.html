@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.N. Tagore Higher Secondary School - Quality Education for Tomorrow</title>
+    <meta name="description" content="Welcome to R.N. Tagore Higher Secondary School, providing quality education and holistic development since 1985. Explore our programs, facilities, admissions, and results.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Example Styles for New Sections (Add to style.css preferably) */
+        .why-choose-us { background-color: var(--light-gray); }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .feature-item i {
+            font-size: 4rem;
+            color: var(--secondary-blue);
+            margin-bottom: 1.5rem;
+        }
+        .feature-item h3 { font-size: 2rem; color: var(--primary-blue); margin-bottom: 1rem; }
+        .feature-item p { font-size: 1.5rem; }
+
+        .quick-actions { text-align: center; }
+        .quick-actions .actions-grid {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             gap: 2rem;
+             margin-top: 3rem;
+        }
+         .quick-actions .action-link {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            border: 2px solid var(--secondary-blue);
+            color: var(--secondary-blue);
+            font-weight: 600;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: var(--transition);
+         }
+         .quick-actions .action-link:hover {
+             background-color: var(--secondary-blue);
+             color: var(--white);
+         }
+
+         .home-notices .notice-summary {
+             background-color: var(--white);
+             padding: 1.5rem 2rem;
+             margin-bottom: 1.5rem;
+             border-radius: var(--border-radius);
+             box-shadow: var(--box-shadow-light);
+             border-left: 4px solid var(--accent-yellow);
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             transition: var(--transition);
+         }
+         .home-notices .notice-summary:hover {
+            transform: translateX(5px);
+            box-shadow: var(--box-shadow);
+         }
+          .home-notices .notice-summary h3 {
+             font-size: 1.7rem; margin: 0; color: var(--primary-blue);
+          }
+          .home-notices .notice-summary .date {
+             font-size: 1.3rem; color: #666; flex-shrink: 0; margin-left: 1.5rem;
+          }
+          .home-notices .view-all { margin-top: 3rem; text-align: center;}
+
+
+         .home-achievers { background-color: var(--light-gray); text-align: center;}
+         /* Reuse .topper-card styles from toppers.html CSS if possible */
+         .home-achievers .achiever-preview { display: inline-block; margin: 0 1rem; max-width: 25rem; }
+
+         .home-contact { text-align: center; }
+         .home-contact p { font-size: 1.8rem; margin-bottom: 1.5rem; }
+         .home-contact .contact-links a {
+             font-size: 1.8rem;
+             margin: 0 1.5rem;
+             color: var(--secondary-blue);
+             text-decoration: none;
+         }
+          .home-contact .contact-links a:hover { color: var(--primary-blue); }
+          .home-contact .btn { margin-top: 2rem; }
+
+         /* Ensure gallery preview styles are consistent */
+         #gallery .gallery-grid { /* Ensure grid from index page works */
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Adjust size */
+              gap: 2rem;
+         }
+          #gallery .gallery-item { /* Ensure item from index page works */
+               position: relative; border-radius: var(--border-radius-lg); overflow: hidden;
+               box-shadow: var(--box-shadow); height: 20rem; /* Adjust height */ cursor: pointer;
+          }
+          /* Add other gallery styles if needed */
+           #gallery .view-all { margin-top: 3rem; text-align: center;}
+
+           .principal-brief { display: flex; align-items: center; gap: 3rem; margin-top: 4rem; background: var(--light-gray); padding: 2rem; border-radius: var(--border-radius-lg); }
+           .principal-brief img { width: 10rem; height: 10rem; border-radius: 50%; object-fit: cover; flex-shrink: 0;}
+           .principal-brief p { margin-bottom: 1rem; }
+           .principal-brief strong { display: block; margin-top: 0.5rem;}
+
+            @media (max-width: 768px) {
+                .principal-brief { flex-direction: column; text-align: center;}
+            }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="school.html" class="logo" aria-label="R.N. Tagore H.S. School Homepage">
+                <img src="https://media-hosting.imagekit.io/09320f4d0ad84f25/rn%20tagore%20logo%202.o.png?Expires=1838483430&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PdGQ1ljtS~a8gpczWKoe9NfKau2eJxP-pzIYO2veq6HGLycqNCPnJjX7n~dYt48BVP34l~kLGS8Hiwzvc75WG-xUyjmW~iCWuvsxVRlITjQirRdiyTeIazn91RwL0tDwMdJ85hxP37gp5d4k2hbjB7IjwJ5Gklgm32tkHiqCxt~4po4s6OlWfRWVdrxSJXkMOaGsi2ulh41KT-ZPPyGVP81lajEutHXlO1OrQeocvDp0nhQnGd-0Yb1peyDDt8SsJUtRY586mYPolBp7jvMSILv2ybMi6dJbvH6WIFO8zEtzDLrSscvsVejXSAGrm~9~EwzW7-EEn-YAmuCwFstZLg__" alt="R.N. Tagore H.S. School Logo">
+                <div class="logo-text">
+                    <h1>R.N. Tagore H.S. School</h1>
+                    <p>A Quality School For Better Tomorrow</p>
+                </div>
+            </a>
+            <nav aria-label="Main Navigation">
+                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav-menu" role="menu">
+                     <li role="none"><a href="school.html" role="menuitem" aria-current="page">Home</a></li> <li role="none"><a href="About.html" role="menuitem">About</a></li>
+                    <li role="none"><a href="Notices.html" role="menuitem">Notices</a></li>
+                    <li role="none"><a href="Gallery.html" role="menuitem">Gallery</a></li>
+                    <li role="none"><a href="results.html" role="menuitem">Results</a></li>
+                    <li role="none"><a href="toppers.html" role="menuitem">Toppers</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    <li role="none" class="nav-btn-li"><a href="admission.html" class="btn nav-btn" role="menuitem">Admissions</a></li>
+                    <li role="none" class="mobile-nav-btn" style="display: none;"><a href="admission.html" class="btn" role="menuitem">Admissions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero section" id="home">
+             <div class="hero-content container">
+                <h1>Welcome to R.N. Tagore Higher Secondary School</h1>
+                <p>Empowering students with quality education and holistic development since 1985</p>
+                 <a href="admission.html" class="btn">Apply for Admission</a>
+            </div>
+        </section>
+
+        <section class="section" id="about-summary">
+            <div class="container">
+                <h2>Discover Our Legacy</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); gap: 4rem; align-items: center;">
+                    <div>
+                        <p>Since 1985, R.N. Tagore H.S. School has nurtured thousands of young minds, fostering academic excellence alongside strong character development. We provide a supportive environment where students explore their potential.</p>
+                        <p>Our mission focuses on quality, affordability, and holistic growth, preparing responsible global citizens.</p>
+                        <a href="About.html" class="btn" style="margin-top: 2rem;">Learn More About Us</a>
+                    </div>
+                    <div class="principal-brief">
+                        <img src="https://media-hosting.imagekit.io/cd9d510130dd40fa/hitesh%20sir.png?Expires=1838483843&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=E4Hi24zZyn~V6G3KYOsumisy5idTZDetiQtOCKEIbka6wOJcSQ0-RLRsWQq-NDETIMUNWQCKFWQmhM5HdtXIaUx06tOW409MB93lCZBFYlIAUuKLRX47LPLiEheNtnf-gejbpzUDQ-ZP4EA0UZZIwhfJPZfs1ajWxi0oqKWl1rOLtC4ZnmwLqekZ3VNCs3c3nTn0jgsjfa-Dxh3IA6Qp-yKEdyBE0GeKMYKhHkurDVdvhI6hgBdwI6roxfuJ79yt5lLxHmpbBpO0kh8BPvqBUb1NplfoW8~3dLljfXAxJOHODx4Z8Sgy3ub4IS7smRj3r9Ybb~HjMAxMawrkfBvfAA__" alt="Portrait of Principal Dr. Hitesh Mahajan">
+                        <div>
+                            <p><em>"We are committed to guiding our students towards success and personal growth."</em></p>
+                            <strong>Dr. Hitesh Mahajan</strong>
+                            <span>Principal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="section why-choose-us" id="why-choose-us">
+            <div class="container">
+                <h2>Why Choose R.N. Tagore?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Experienced Faculty</h3>
+                        <p>Dedicated and qualified teachers providing personalized attention.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Modern Infrastructure</h3>
+                        <p>Smart classrooms, well-equipped labs, and extensive library resources.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Holistic Development</h3>
+                        <p>Focus on academics, sports, arts, and character building.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe & Nurturing</h3>
+                        <p>A secure campus environment fostering student well-being.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <section class="section home-notices" id="notices-summary">
+            <div class="container">
+                <h2>Latest Notices</h2>
+                 <div class="notice-list-summary">
+                     <a href="Notices.html#notice-example-1" class="notice-summary"> <h3>Annual Sports Day Schedule & Guidelines</h3>
+                        <span class="date"><time datetime="2025-04-05">Apr 05, 2025</time></span>
+                    </a>
+                     <a href="Notices.html#notice-example-2" class="notice-summary">
+                         <h3>Revised Examination Timetable for Class X</h3>
+                         <span class="date"><time datetime="2025-04-02">Apr 02, 2025</time></span>
+                    </a>
+                    <a href="Notices.html#notice-example-3" class="notice-summary">
+                        <h3>Library Book Return Reminder</h3>
+                        <span class="date"><time datetime="2025-03-28">Mar 28, 2025</time></span>
+                    </a>
+                     </div>
+                <div class="view-all">
+                    <a href="Notices.html" class="btn">View All Notices</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section quick-actions" id="quick-actions">
+             <div class="container">
+                 <h2>Quick Actions</h2>
+                 <div class="actions-grid">
+                     <a href="admission.html" class="action-link"><i class="fas fa-user-plus"></i> Apply for Admission</a>
+                     <a href="results.html" class="action-link"><i class="fas fa-poll"></i> Check Results</a>
+                     <a href="Notices.html" class="action-link"><i class="fas fa-bullhorn"></i> View Notices</a>
+                     <a href="contact.html" class="action-link"><i class="fas fa-envelope"></i> Contact Us</a>
+                 </div>
+             </div>
+         </section>
+
+
+        <section class="section" id="gallery"> <div class="container">
+                <h2>Glimpses of Our School</h2>
+                <div class="gallery-grid">
+                     <div class="gallery-item" data-src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/486564548_1122972119629392_3543986199861524040_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MUcYwJZ0ahcQ7kNvwFezFek&_nc_oc=AdnZLSloa0B5boGGuGWoOcfq9xZiCuFWm6B0IP7s4-q2OHqzGQHjJU7mZMs-1xjyjWU&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=7W-rXsn9P8x7UZTbmLSHOA&oh=00_AYHLN8n3tuMPx19HY7q_tj17KM0PtnohXB3zMSDwzuR1yQ&oe=67F7506D" data-caption="Modern Classroom">
+                         <img src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/486564548_1122972119629392_3543986199861524040_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MUcYwJZ0ahcQ7kNvwFezFek&_nc_oc=AdnZLSloa0B5boGGuGWoOcfq9xZiCuFWm6B0IP7s4-q2OHqzGQHjJU7mZMs-1xjyjWU&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=7W-rXsn9P8x7UZTbmLSHOA&oh=00_AYHLN8n3tuMPx19HY7q_tj17KM0PtnohXB3zMSDwzuR1yQ&oe=67F7506D" alt="Modern classroom setup with students" loading="lazy">
+                        <div class="overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/483102541_1114424117150859_2501377575143789924_n.jpg?stp=cp6_dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZlG4NXG7g3cQ7kNvwFHtzEW&_nc_oc=AdmyoV0RHPvu2gJglE_rCkKFtdGIQX8uh1RfcD009m4zA2FJFI_AU5Zuhy6Tut6I73U&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=YgJGyr374v4PpTzZA50asQ&oh=00_AYH3Quvo04W2BP8KeObLfkN9fXK48f158o8BZ1aR6BvRog&oe=67F72E75" data-caption="School Building">
+                        <img src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/483102541_1114424117150859_2501377575143789924_n.jpg?stp=cp6_dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZlG4NXG7g3cQ7kNvwFHtzEW&_nc_oc=AdmyoV0RHPvu2gJglE_rCkKFtdGIQX8uh1RfcD009m4zA2FJFI_AU5Zuhy6Tut6I73U&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=YgJGyr374v4PpTzZA50asQ&oh=00_AYH3Quvo04W2BP8KeObLfkN9fXK48f158o8BZ1aR6BvRog&oe=67F72E75" alt="School building exterior view" loading="lazy">
+                        <div class="overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/484338523_1114420750484529_5839870191607933698_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kHuQE8SFLNQQ7kNvwF6EKMc&_nc_oc=AdnFbTmcyT7p84YRkeaVjfxF4FzeBO1GUKCmjqtt4cCP66aiWGWXSZ0d5b6IVX8qA-I&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=J2Hof4mQzANeX3ZGflmcew&oh=00_AYGMrcIn0mKPysCEm7RcjSnSCK4EG2nwiLWXMq7dFNdf9Q&oe=67F7295E" data-caption="Library">
+                         <img src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/484338523_1114420750484529_5839870191607933698_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kHuQE8SFLNQQ7kNvwF6EKMc&_nc_oc=AdnFbTmcyT7p84YRkeaVjfxF4FzeBO1GUKCmjqtt4cCP66aiWGWXSZ0d5b6IVX8qA-I&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=J2Hof4mQzANeX3ZGflmcew&oh=00_AYGMrcIn0mKPysCEm7RcjSnSCK4EG2nwiLWXMq7dFNdf9Q&oe=67F7295E" alt="School library with bookshelves" loading="lazy">
+                        <div class="overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/483486193_1113283087264962_4788388131383733214_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=yqnd7AHZ4OQQ7kNvwG0zjm_&_nc_oc=AdldWYo2QyS6S0woZIHtoZwI9gaijkQmzPe3IpnKtR0IcEOdDQ5oyZTuvp8SE8DStbg&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=Th7NFCBp6KLE9LEhG87b9g&oh=00_AYFn1udsWZoSwSd4HI573ynYlhFaykOE3kS4ADEklGZ-KQ&oe=67F72A7E" data-caption="Sports Day">
+                        <img src="https://scontent.fixj2-1.fna.fbcdn.net/v/t39.30808-6/483486193_1113283087264962_4788388131383733214_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=yqnd7AHZ4OQQ7kNvwG0zjm_&_nc_oc=AdldWYo2QyS6S0woZIHtoZwI9gaijkQmzPe3IpnKtR0IcEOdDQ5oyZTuvp8SE8DStbg&_nc_zt=23&_nc_ht=scontent.fixj2-1.fna&_nc_gid=Th7NFCBp6KLE9LEhG87b9g&oh=00_AYFn1udsWZoSwSd4HI573ynYlhFaykOE3kS4ADEklGZ-KQ&oe=67F72A7E" alt="Students participating in Sports Day events" loading="lazy">
+                        <div class="overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    </div>
+                 <div class="view-all">
+                    <a href="Gallery.html" class="btn">Explore Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section home-achievers" id="achievers-summary">
+            <div class="container">
+                <h2>Celebrating Success</h2>
+                <p>We are proud of our students' accomplishments in academics and beyond.</p>
+                 <div class="achiever-preview" style="margin-top: 2rem;">
+                     <article class="topper-card" style="min-height: 25rem;"> <div class="topper-photo" style="width: 10rem; height: 10rem;">
+                            <img src="https://via.placeholder.com/150x150.png?text=Topper" alt="Photo of School Topper">
+                        </div>
+                        <div class="topper-info">
+                            <h3 style="font-size: 1.8rem;">Priya Singh</h3>
+                            <p class="achievement" style="font-size: 1.5rem;">Class XII Topper</p>
+                            <p class="session" style="font-size: 1.3rem;">2024-25</p>
+                        </div>
+                    </article>
+                 </div>
+                 <div class="view-all" style="margin-top: 3rem;">
+                    <a href="toppers.html" class="btn">Meet Our Achievers</a>
+                </div>
+            </div>
+        </section>
+
+         <section class="section home-contact" id="contact-summary">
+             <div class="container">
+                 <h2>Get In Touch</h2>
+                 <p>Have questions or want to learn more? Contact our admission office.</p>
+                 <div class="contact-links">
+                     <a href="tel:+911234567890"><i class="fas fa-phone-alt"></i> +91 12345 67890</a>
+                     <a href="mailto:info@rntagore-example.com"><i class="fas fa-envelope"></i> info@rntagore-example.com</a>
+                 </div>
+                  <a href="contact.html" class="btn">Visit Contact Page</a>
+             </div>
+         </section>
+
+         <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+             <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
+             <img id="lightbox-img" src="" alt="Enlarged gallery image">
+             <div id="lightbox-caption" class="lightbox-caption" aria-live="polite"></div>
+         </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>R.N. Tagore Higher Secondary School: Committed to quality education...</p>
+                     <div class="social-links">
+                         <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="school.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Notices.html">Notices</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="toppers.html">Toppers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Academics</h3>
+                     <ul>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="About.html#facilities">Facilities</a></li>
+                        <li><a href="#">Faculty</a></li>
+                         <li><a href="results.html">Results</a></li>
+                         <li><a href="toppers.html">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <address>
+                        <ul>
+                           <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 School Lane, Cityville</li>
+                            <li><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+911234567890">+91 12345 67890</a></li>
+                            <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@rntagore-example.com">info@rntagore-example.com</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">
+                 <p>© <span id="current-year">2025</span> R.N. Tagore Higher Secondary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script> <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Ensure JS for mobile menu, lightbox (if needed for preview), and back-to-top works
+    </script>
+</body>
+</html>
